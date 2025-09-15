@@ -1,0 +1,133 @@
+body {
+    background-color: #9f7ff8ad;
+    color: rgb(243, 250, 243);
+    margin: 0px;
+
+    font-family: "Keania One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    zoom: 150%
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    font-weight: 100;
+}
+
+header {
+    background-color: rgb(15, 108, 170);
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size:30px;
+    color: rgb(222, 250, 211);
+    
+
+
+}
+
+header h1{
+    font-weight:100;
+    margin: 10px
+}
+
+header h2{
+    font-weight:100;
+    margin:10px
+}
+
+nav {
+background-color: rgb(217, 255, 0);
+padding: 20px;
+text-align: center;
+font-size: 40px;
+
+}
+
+/* descendant selector */
+nav a {
+    margin:20px;
+    color: rgba(42, 121, 49, 0.733);
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #000;
+}
+
+main{
+    background-color: rgb(15, 29, 236);
+    padding: 100px;
+    border: 10px solid rgb(238, 12, 12);
+    scroll-behavior: smooth;
+    
+}
+
+main h2{
+    font-size: 66px;
+    letter-spacing: -5px;
+    transform: skewY(10deg);
+
+}
+
+main h3 {
+    margin: 10px 0px;
+    font-size: 26px;
+    transform: skewY(10deg);
+
+}
+
+main p {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transform: skewY(7deg);
+}
+
+main img {
+    width:100px;
+    border: 20px solid rgb(255, 251, 0);
+    padding:22px;
+    margin: 22px;
+    background-color: rgb(5, 53, 49) ;
+    rotate: 30deg;
+    filter: grayscale(70%);
+    block-size: 50px;
+    border-block-end: 10px solid rgb(231, 13, 49);
+    box-shadow: 5px 10px #888888;
+}
+
+
+footer {
+
+    background-color: rgb(52, 109, 15);
+    padding: 20px;
+    
+}
+
+footer h3 {
+ 
+  font-weight:100;
+    margin: 5px;
+     transform: skewx(1.2);
+ 
+}
+
+footer ul {
+ 
+  font-weight:50;
+    margin: 5px;
+     transform: scaleY(1.5);
+ 
+}
