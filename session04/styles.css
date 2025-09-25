@@ -1,0 +1,99 @@
+body {
+    background-color: #f00;
+    background-image: url(images/moss01.jpg);
+    background-attachment: fixed;
+    /* background-repeat: repeat-x; */
+    background-size: 400px;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* only us id once per page, use a hashtag */
+#wrapper {
+    width: 50%;
+    background-color: rgb(153, 230, 134);
+    margin: 0px auto;
+    padding: 20px 50px;
+}
+
+#slump {
+    width: 100%;
+    background-color: rgb(183, 207, 177);
+    margin: 50px auto; 
+}
+
+
+header h1 {
+
+font-family: "Bitcount Ink", system-ui;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal;
+font-size: 72px
+
+}
+
+header h2{
+
+font-family: "Bitcount Ink", system-ui;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal;
+font-size: 32px
+
+
+}
+
+/* use them as many times as you like, use period */
+span.wow {
+    color: #f00;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+span.wii {
+    color: rgb(17, 0, 255);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: Arial;
+}
+
+span.woo {
+    color: rgb(255, 238, 0);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: Times;
+}
+
+main p.types{
+    font-size: 20px;
+    line-height: 26px;
+    background-color: rgb(122, 185, 101)
+}
+
+main table {
+    text-align: center;
+    background-color: #e1ff9b;
+    width: 100%;
+}
+
+main table th {
+    background-color: #a8ca58;
+
+}
+
+main table td,
+main table th {
+    padding: 6px;
+    border: 10px solid #000;
+}
+
+main img {
+    border: 100px;
+    padding: 250px;
+    border-color:rgb(103, 207, 68)
+}
