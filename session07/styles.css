@@ -1,0 +1,200 @@
+body {
+    background-color: #000;
+    background-image: url("images/mush01.jpg");
+    background-attachment: fixed;
+
+
+    margin: 0;
+    Padding: 0;
+    font-family: "Eater", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color: rgb(170, 170, 170);
+    padding: 0px;
+    margin: 0px;
+}
+#wrapper {
+    max-width: 1500px;
+    background-color: #fff;
+    border: solid #000000 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Add padding to all of the #wrapper child elements, >* symbol looks for first child in inside the selector */
+#wrapper>* {
+    padding: 20px;
+}
+
+
+header {
+    background: rgb(247, 150, 4);
+    order: 1;
+    flex: 0 0 100%;
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    font-size: 40px;
+}
+
+main {
+    background: rgba(57, 78, 39, 0.938);
+    order: 3;
+    flex: 1 1 500px;
+    margin: 0;
+    Padding: 0;
+    font-family: "Fontdiner Swanky", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+}
+
+main div.featuredImageOne {
+    border: solid #f00 10px;
+    background-color: rgba(48, 185, 174, 0.671);
+    padding: 60px;
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+}
+
+main div.featuredImageOne img {
+    width: 100%;
+}
+
+main div.featuredImageTwo {
+    border: dashed rgb(0, 15, 224) 3px;
+    background-color: rgb(248, 232, 0);
+    padding: 50px;
+    margin: 100px auto;
+    width: 300px;
+    text-align: center;
+}
+
+main div.featuredImageTwo img {
+    width: 100%;
+    height: 100%;
+}
+
+main div.featuredImageThree {
+    border: dotted rgb(95, 90, 20) 50px;
+    background-color: rgb(25, 173, 82);
+    padding: 50px;
+    margin: 200px auto;
+    width: 500px;
+    text-align: center;
+}
+
+main div.featuredImageThree img {
+    width: 100%;
+    height: 100%;
+}
+
+main div.featuredImageFour {
+    border: solid rgba(196, 4, 255, 0.521) 50px;
+    background-color: rgb(156, 102, 1);
+    padding: 100px;
+    margin: 150px auto;
+    width: 600px;
+    text-align: center;
+}
+
+main div.featuredImageFour img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* SUBSCRIBE BUTTON */
+main div.buttonAbsolute {
+    background-color: rgb(255, 208, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 150px;
+    opacity: 0.9;
+    padding: 15px;
+    border-radius: 125px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* view gallery button */
+main div.buttonRelative {
+    background-color: rgb(255, 208, 0);
+    width: 200px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    left: 40px;
+    z-index: 3;
+}
+
+nav {
+    background: rgba(17, 88, 17, 0.575);
+    padding:40px 0px;
+    order: 2;
+    flex: 1 0 200px;
+    
+}
+
+nav a {
+font-size: 24px;
+border: rgba(245, 159, 0, 0.897) solid 5px;
+background-color:rgb(102, 255, 0);
+padding: 10px 20px;
+margin:20px;
+color: #000;
+text-decoration: none;
+font-style: Italic;
+font-weight: 800;
+}
+
+nav a:hover {
+    background-color:#ebe70b
+}
+
+
+aside {
+    background: seagreen;
+    order: 4;
+    flex: 1 0 200px;
+    margin: 0;
+    Padding: 0;
+    font-family: "Fontdiner Swanky", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+footer {
+    background: rgb(252, 235, 0);
+    order: 5;
+    flex: 0 0 100%;
+}
+
