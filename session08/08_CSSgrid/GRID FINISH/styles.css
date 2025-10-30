@@ -1,0 +1,86 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: white;
+  /* grid layout parent */
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: rgb(6, 76, 104);
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+main {
+  background: rgb(77, 253, 209);
+  /* span 6 cols */
+  grid-column: 5 / 10;
+  text-align: center;
+}
+
+nav {
+  background: cadetblue;
+  /* span 3 cols */
+  grid-column: 1 / 5;
+  text-align: center;
+
+}
+
+aside {
+  background: rgb(6, 207, 93);
+  /* span 3 cols */
+  grid-column: 10 / 15;
+    text-align: center;
+
+}
+
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+
+footer {
+  background: darkslateblue;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+}
