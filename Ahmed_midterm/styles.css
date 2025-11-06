@@ -1,0 +1,147 @@
+body {
+    background-color: #000;
+    background-image: url("images/SBD.JPG");
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    /* background-position-y: bottom;  */
+    margin: 0;
+    padding: 0;
+    font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    /* 200 – 800 */
+    font-style: normal;
+
+}
+
+/* id rule uses hashtag #, only one per page */
+#wrapper {
+    margin: 100px auto;
+    width: 60%;
+    background-color: #0863ad;
+    padding: 30px 50px;
+    /* background-image: url("images/moss03.jpg"); */
+}
+
+/* class rules use a period to make a rule about a class, use multiple times */
+.wow {
+    color: #f00;
+    font-weight: 900;
+    font-style: italic;
+}
+
+header h1 {
+
+   font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 66px;
+   
+}
+main p {
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h2 {
+    border: #f00 dotted 10px;
+    background-color: rgb(195, 197, 83);
+    padding: 50px;
+    margin: 50px;
+    font-size: 44px;
+    grid-column: 1 / 5;
+    text-align: center
+}
+
+
+
+
+main div.featuredImageOne {
+    border: solid #f00 10px;
+    background-color: rgba(48, 185, 174, 0.671);
+    padding: 60px;
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+}
+
+main div.featuredImageOne img {
+    width: 100%;
+}
+
+main div.featuredImageTwo {
+    border: dashed rgb(0, 15, 224) 3px;
+    background-color: rgb(248, 232, 0);
+    padding: 50px;
+    margin: 100px auto;
+    width: 300px;
+    text-align: center;
+}
+
+main div.featuredImageTwo img {
+    width: 100%;
+    height: 100%;
+}
+
+table,
+th,
+td,
+tr {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+main table {
+    border: 10px solid rgb(192, 192, 192);
+    background-color: rgb(255, 207, 74);
+
+}
+
+main table th {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(155, 155, 155);
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 33px;
+    padding: 22px;
+
+}
+
+main table td {
+    border: 5px solid rgb(77, 77, 77);
+    background-color: rgb(255, 255, 255);
+
+}
+
+nav {
+    background-color: rgb(245, 8, 8);
+    padding:40px 0px;
+    text-align:center;
+}
+
+nav a {
+font-size: 24px;
+border: rgb(204, 204, 204) solid 5px;
+background-color:rgba(128, 182, 3, 0.863);
+padding: 10px 20px;
+margin:20px;
+color: #000;
+text-decoration: none;
+font-style: Italic;
+font-weight: 800;
+}
+
+nav a:hover {
+    background-color:#fff
+}

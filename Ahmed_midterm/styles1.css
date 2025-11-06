@@ -1,0 +1,126 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  /* remove margin and padding on body */
+   background-color: #000;
+    background-image: url("images/SBD.JPG");
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    /* background-position-y: bottom;  */
+    margin: 0;
+    padding: 0;
+    font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    /* 200 – 800 */
+    font-style: normal;
+
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: white;
+  /* grid layout parent */
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: rgb(6, 76, 104);
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+main {
+  background: rgb(77, 253, 209);
+  /* span 6 cols */
+  grid-column: 5 / 10;
+  text-align: center;
+}
+
+
+main div.featuredImageOne {
+    border: solid #f00 10px;
+    background-color: rgba(48, 185, 174, 0.671);
+    padding: 60px;
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+}
+
+main div.featuredImageOne img {
+    width: 100%;
+}
+nav {
+  background: cadetblue;
+  /* span 3 cols */
+  grid-column: 1 / 5;
+  text-align: center;
+
+}
+
+aside {
+  background: rgb(6, 207, 93);
+  /* span 3 cols */
+  grid-column: 10 / 15;
+    text-align: center;
+
+}
+
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+footer {
+    background: rgb(252, 235, 0);
+    order: 5;
+    flex: 0 0 100%;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
