@@ -56,10 +56,10 @@ dragElement(document.getElementById('bluepiece1'));
 dragElement(document.getElementById('bluepiece2'));
 dragElement(document.getElementById('bluepiece3'));
 dragElement(document.getElementById('bluepiece4'));
-dragElement(document.getElementById('Yellowpiece1'));
-dragElement(document.getElementById('Yellowpiece2'));
-dragElement(document.getElementById('Yellowpiece3'));
-dragElement(document.getElementById('Yellowpiece4'));
+dragElement(document.getElementById('yellowpiece1'));
+dragElement(document.getElementById('yellowpiece2'));
+dragElement(document.getElementById('yellowpiece3'));
+dragElement(document.getElementById('yellowpiece4'));
 
 
 const rollBtn = document.getElementById('roll-btn');
