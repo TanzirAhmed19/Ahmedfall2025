@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+     
+    <link rel="stylesheet" href="styles.css">
+
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- p5 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+
+  <!-- Your JS files -->
+  <script defer src="main.js"></script>
+  <script defer src="sketch.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header>
+      <h1>The Forge</h1>
+      <h2>an online training course for strength + skill</h2>
+      <div class="badge">TRAIN SMART</div>
+    </header>
+
+    <nav>
+      <a href="index.html">home</a>
+      <a href="calisthenics.html">calisthenics</a>
+      <a href="bodybuilding.html">bodybuilding</a>
+      <a href="powerlifting.html">powerlifting</a>
+    </nav>
+
+    <main>
+      <h2>HOME</h2>
+      <h3>Pick a track and follow the plan</h3>
+
+      <p>
+        This site has three training tracks, each with a simple weekly plan
+      </p>
+
+      <!-- Vanilla JS interaction -->
+      <section class="box">
+        <h3>Quick Tip</h3>
+        <p id="tipText">Tip: Start light. Focus on form.</p>
+        <button id="tipBtn" type="button">new tip</button>
+      </section>
+
+      <!-- Flex cards -->
+      <section class="cards" aria-label="Training tracks">
+        <article class="card">
+          <h3>Calisthenics</h3>
+          <p>Bodyweight strength: push, pull, legs + skill progressions.</p>
+        </article>
+
+        <article class="card">
+          <h3>Bodybuilding</h3>
+          <p>Hypertrophy basics: consistent volume + recovery.</p>
+        </article>
+
+        <article class="card">
+          <h3>Powerlifting</h3>
+          <p>Build the big three: squat, bench, deadlift.</p>
+        </article>
+      </section>
+
+      <h3>Click to pose</h3>
+      <div id="p5Holder"></div>
+
+    </main>
+
+    <footer>
+      <h2>Created by Tanzir Ahmed | All Rights Reserved</h2>
+      <ul>
+      <a href="https://en.wikipedia.org/wiki/Calisthenics" target="_blank">Calisthenics</a>
+      <a href="https://en.wikipedia.org/wiki/Bodybuilding" target="_blank">Bodybuilding</a>
+      <a href="https://en.wikipedia.org/wiki/Powerlifting" target="_blank">Powerlifting</a>
+      </ul>
+    </footer>
+
+  </div>
+</body>
+
+</html>
